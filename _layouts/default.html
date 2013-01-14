@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="utf-8" />
-  <title>github pages sample - {{ page.title }}</title>
-  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-  <link rel="stylesheet" href="/css/screen.css" type="text/css" />
-</head>
-
-<body>
-
-<div id="site">
-  <div id="title"></div>
-  <div id="navigation">
-    <ul>
-      <li><a href="/index.html">HOME</a></li>
-    </ul>
-  </div>
-
-  <div id="toolbar">
-  </div>
-  
-  {{ content }}
-  
-  <div id="footer"></div>
-</div>
-</body>
-</html>
+---
+theme :
+  name : twitter
+---
+{% include JB/setup %}
+{% include themes/twitter/default.html %}
